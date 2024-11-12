@@ -2,16 +2,24 @@
 
   "use strict";
 
+  // var initPreloader = function() {
+  //   $(document).ready(function($) {
+  //   var Body = $('body');
+  //       Body.addClass('preloader-site');
+  //   });
+  //   $(window).load(function() {
+  //       $('.preloader-wrapper').fadeOut();
+  //       $('body').removeClass('preloader-site');
+  //   });
+  // }
   var initPreloader = function() {
-    $(document).ready(function($) {
-    var Body = $('body');
-        Body.addClass('preloader-site');
-    });
-    $(window).load(function() {
-        $('.preloader-wrapper').fadeOut();
-        $('body').removeClass('preloader-site');
+    $(document).ready(function() {
+      // Immediately show content as it loads without blocking
+      $('.preloader-wrapper').fadeOut(); // Hide the preloader right away
+      $('body').removeClass('preloader-site');
     });
   }
+  
 
   // init Chocolat light box
 	var initChocolat = function() {
